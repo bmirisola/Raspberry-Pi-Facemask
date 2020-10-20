@@ -13,8 +13,8 @@ pixel_pin = board.D21
 num_pixels = 256
 display_width = 32
 display_height = 8
-matrixbrightness = 0.2
-scrollSpeed = 0.12 #adjust the scrolling speed here, smaller number=faster scroll
+matrixbrightness = 0.1
+scrollSpeed = 0.06 #adjust the scrolling speed here, smaller number=faster scroll
 TextColor = (255,255,255) #set the color of your text here in RGB, default is white
 repeats = 2 #number of times the text will scroll across the matrix
 
@@ -23,9 +23,9 @@ pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=matrixbrightness, a
 rotation = 0
 
 #load your font
-font = ImageFont.truetype("LiberationMono-Regular.ttf", 8)
+#font = ImageFont.truetype("LiberationMono-Regular.ttf", 8)
 #5x7.ttf font is easier to read and available for download for personal use from the Internet
-#font = ImageFont.truetype("5x7.ttf", 8)
+font = ImageFont.truetype("5x7.ttf", 8)
 
 #for the Adafruit NeoMatrix grid
 def getIndex(x, y):        
